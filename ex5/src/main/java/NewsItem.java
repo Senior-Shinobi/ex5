@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class NewsItem {
     String name;
@@ -6,6 +6,7 @@ public class NewsItem {
     TitleGenerator tg;
     FederationGenerator fg;
     SummaryGenerator sg;
+    ArrayList a;
 
     void setName(String name) {
         this.name = name;
@@ -43,6 +44,11 @@ public class NewsItem {
 
     public String toString(){
         return name;
+    }
+
+    public NewsItem addTranslation(ArrayList<String> strings) {
+        a = strings;
+        return this;
     }
 }
 

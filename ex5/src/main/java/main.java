@@ -29,7 +29,7 @@ public class main {
         System.out.println("TEST CASE 4");
         newsItem = lprl.publish("hockey", "communique3");
         System.out.println("Long version for communique3 " + newsItem + "\n");
-/*
+
         //STEP 2
         System.out.println("STEP 2: Testing decorators that wrap original news item");
         System.out.println("TEST CASE 5");
@@ -61,7 +61,7 @@ public class main {
         newsItem = lprl.publish("ski", "communique3");
         newsItem = newsItem.addTranslation(new ArrayList<String>(Arrays.asList("Japanese", "French", "Mandarin")));
         System.out.println("Long version for communique3 " + newsItem + "\n");
-*/
+
     }
 }
 
